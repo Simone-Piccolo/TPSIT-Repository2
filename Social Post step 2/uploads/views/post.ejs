@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Crea Post</title>
+  <title>Nuovo Post</title>
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -9,9 +9,14 @@
 <h2>Crea Post</h2>
 
 <form action="/post" method="POST" enctype="multipart/form-data">
-  <input type="text" name="title" placeholder="Titolo" required>
-  <textarea name="description" placeholder="Descrizione" required></textarea>
-  <input type="file" name="image" required>
+  <input type="text" name="title" placeholder="Titolo" required><br><br>
+
+  <textarea name="description" placeholder="Descrizione" required></textarea><br><br>
+
+  <input type="text" name="extra" placeholder="Info aggiuntive"><br><br>
+
+  <input type="file" name="image" accept="image/*" required><br><br>
+
   <button type="submit">Invia</button>
 </form>
 
