@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gallery</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<h2>Gallery Immagini</h2>
+
+<div class="grid">
+<% posts.forEach(post => { %>
+  <a href="/post/<%= post.id %>">
+    <img src="<%= post.image %>" class="thumb">
+  </a>
+<% }) %>
+</div>
+
+</body>
+</html>
